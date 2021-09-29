@@ -19,7 +19,7 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = JSON.Parse(UPSIDEDOWN_MODE);
+const hereIsTheUpsideDown = JSON.parse(UPSIDEDOWN_MODE);
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
@@ -30,6 +30,6 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-app.listen(PORT || 3000, () => {
+app.listen(PORT, () => {
   console.log('Escutando na porta 3000');
 });
