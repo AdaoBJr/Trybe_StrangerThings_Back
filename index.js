@@ -20,17 +20,15 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = true;
-
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
-    hereIsTheUpsideDown,
+    UPSIDEDOWN_MODE,
   );
 
   res.status(200).json(characters);
 });
 
-app.listen(3001, () => {
+app.listen(PORT, () => {
   console.log('Escutando na porta 3001');
 });
