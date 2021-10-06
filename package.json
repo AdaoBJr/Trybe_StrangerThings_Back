@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2-runtime start ecosystem.config.yml",
-    "start:dev": "pm2-runtime start index.js --name API_StrangerThings --watch",
+    "start:dev": "pm2-runtime start node index.js --watch",
     "test": "jest --runInBand  --detectOpenHandles --forceExit",
     "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json ."
   },
@@ -19,10 +19,7 @@
     "eslint-config-trybe-backend": "1.0.3",
     "express": "4.17.1",
     "flipout": "1.0.0",
-    "heroku": "^7.59.0",
-    "local": "^0.3.3",
-    "pm2": "^5.1.2",
-    "web": "^0.0.2"
+    "pm2": "^5.1.2"
   },
   "devDependencies": {
     "eslint": "6.8.0",
@@ -31,8 +28,5 @@
     "frisby": "2.1.3",
     "jest": "26.4.2",
     "js-yaml": "3.14.0"
-  },
-  "optionalDependencies": {
-    "fsevents": "^2.3.2"
   }
 }
