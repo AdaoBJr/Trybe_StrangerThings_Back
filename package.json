@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "12.21.0"
-  },
   "scripts": {
     "start": "pm2-runtime start ecosystem.config.yml",
     "start:dev": "pm2-runtime start index.js --name API_StrangerThings --watch",
