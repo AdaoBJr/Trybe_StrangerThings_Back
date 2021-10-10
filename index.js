@@ -1,7 +1,8 @@
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 
-require('dotenv').config();
 
 const { PORT, UPSIDEDOWN_MODE } = process.env;
 
@@ -30,9 +31,9 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-const RUNNING = PORT || 3000;
+const RUNNING = PORT;
 
 app.listen(RUNNING, () => {
-  console.log(`${process.env}`);
+  console.log(`process.env.PORT = ${process.env.PORT}`);
   console.log(`Escutando na porta ${RUNNING}`);
 });
