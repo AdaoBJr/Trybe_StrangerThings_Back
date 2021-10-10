@@ -24,6 +24,8 @@ app.get('/', (req, res) => {
     hereIsTheUpsideDown,
   );
 
+  console.log(new Date().toISOString());
+
   res.status(200).json(characters);
 });
 
