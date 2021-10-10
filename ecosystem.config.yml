@@ -1,5 +1,5 @@
 apps:
-  - name: app
+  - name: luizreina-bk
     script: ./index.js
     watch: false
     exec_mode: cluster
