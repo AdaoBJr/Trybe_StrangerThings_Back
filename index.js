@@ -18,17 +18,22 @@ const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
 );
 
+let upsideDown = false;
+if (UPSIDEDOWN_MODE === 'true') {
+  upsideDown = true;
+}
+
 app.use(cors());
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
-    UPSIDEDOWN_MODE,
+    upsideDown,
   );
 
   res.status(200).json(characters);
 });
 
 app.listen(PORT, () => {
-  console.log('Escutando na porta 3001');
+  console.log(`Escutando na porta ${PORT}`);
 });
