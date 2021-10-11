@@ -1,6 +1,6 @@
 apps:
   - name: app,
-  script: ./index,
-  exec_mode: cluster,
-  instances: 2,
-  max_memory_restart: 200M
+    script: ./index,
+    exec_mode: cluster,
+    instances: 2,
+    max_memory_restart: 200M
