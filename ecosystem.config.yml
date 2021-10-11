@@ -1,11 +1,6 @@
-module.exports = {
-  apps: [
-    { 
-      name: index,
-      script: ./index,
-      exec_mode: cluster,
-      instances: 2,
-      max_memory_restart: 200M
-    },
-  ],
-};
+apps:
+  - name: app,
+  script: ./index,
+  exec_mode: cluster,
+  instances: 2,
+  max_memory_restart: 200M
