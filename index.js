@@ -32,5 +32,5 @@ app.get('/', (req, res) => {
 const { PORT } = process.env;
 
 app.listen(PORT, () => {
-  console.log(`Escutando na porta ${PORT}`);
+  console.log(`Online port ==> ${PORT}`);
 });
