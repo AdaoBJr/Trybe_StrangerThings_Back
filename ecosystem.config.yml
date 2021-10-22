@@ -1,4 +1,4 @@
-apps:
+  apps:
   - name: 'stranger things'
     script: ./index.js
     exec_mode: cluster
