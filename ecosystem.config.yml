@@ -1,6 +1,7 @@
 apps:
-  - name: app
+  - name: 'stranger things'
     script: ./index.js
+    watch: false
     exec_mode: cluster
     instances: 2
-    max_memory_restart: 200M
+    max_memory_restart: '200M'
