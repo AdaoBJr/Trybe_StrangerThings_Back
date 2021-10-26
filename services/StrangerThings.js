@@ -23,3 +23,4 @@ class StrangerThingsService {
 }
 
 module.exports = StrangerThingsService;
+// iniciando projeto
