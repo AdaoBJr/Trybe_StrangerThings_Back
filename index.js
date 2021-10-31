@@ -14,8 +14,6 @@ const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
 );
 
-// Adiciona linha para push
-
 app.use(cors());
 
 const hereIsTheUpsideDown = true;
