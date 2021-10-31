@@ -9,8 +9,6 @@ require('dotenv').config();
 
 const { PORT } = process.env;
 
-// Heroku não está subindo nada
-
 const app = express();
 
 const strangerThingsRepository = new StrangerThingsRepository(
