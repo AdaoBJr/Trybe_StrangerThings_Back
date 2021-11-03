@@ -31,6 +31,8 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
+// remember that this next piece of code chooses randomly the port in witch the api is gonna run on
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
