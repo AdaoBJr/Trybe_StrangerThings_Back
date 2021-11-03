@@ -1,6 +1,6 @@
 apps:
 
-- name: upside-down
+- name: pm2-process
   script: ./index.js
   exec_mode: cluster
   instances: 2
