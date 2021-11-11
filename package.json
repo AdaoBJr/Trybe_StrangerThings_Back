@@ -7,10 +7,10 @@
     "node": "6.11.1"
   },
   "scripts": {
-    "start": "pm2-runtime start ecosystem.config.yml",
-    "start:dev": "pm2 start index.js --name backend --watch",
     "test": "jest --runInBand  --detectOpenHandles --forceExit",
-    "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json ."
+    "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json .",
+    "start": "pm2-runtime start ecosystem.config.yml",
+    "start:dev": "pm2-runtime start index.js --name backend --watch"
   },
   "keywords": [],
   "author": "",
