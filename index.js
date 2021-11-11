@@ -15,6 +15,7 @@ const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
 );
 
+// comentario
 app.use(cors());
 
 const PORT = process.env.PORT || 3000;
