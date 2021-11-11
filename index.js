@@ -17,8 +17,8 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const { PORT, UPSIDEDOWN_MODE } = process.env;
-const hereIsTheUpsideDown = UPSIDEDOWN_MODE.toLowerCase() === 'true';
+const PORT = process.env.PORT || 3000;
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE.toLowerCase() === 'true' || false;
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
